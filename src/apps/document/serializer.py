@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 from .models import Document, DocumentChunk
-from .tasks import DocumentProcessWorker
+from .worker import DocumentProcessWorker
 
 
 class DocumentSerializer(serializers.ModelSerializer):
